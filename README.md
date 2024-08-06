@@ -4,7 +4,7 @@ for use with NYU Stern Intro to python class
 ## Setup
 # create a sam.gov account
 # Navigate to: https://open.gsa.gov/api/get-opportunities-public-api/#user-account-api-key-creation an follow these steps to get an API Key
-## this api key is good for 89 days from aug 6 2024
+## this api key is good for 90 days from activation
 
 
 ```sh
