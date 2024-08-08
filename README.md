@@ -9,11 +9,11 @@ for use with NYU Stern Intro to python class
 
 ```sh
 #Create virtual environment
-conda create -n xxx-env python=3.11
+conda create -n prj-env python=3.11
 
 
 #Activate the environment:
-conda activate xxx-env
+conda activate prj-env
 
 
 #Install packages:
