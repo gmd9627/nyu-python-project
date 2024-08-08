@@ -141,4 +141,5 @@ with open(html_file, "w") as file:
 
 print("HTML content has been written to opportunity_details.html")
 
-# Automatically open the HTML file in a web brow
+# Automatically open the HTML file in a web browser
+webbrowser.open(f'file://{os.path.realpath(html_file)}')
