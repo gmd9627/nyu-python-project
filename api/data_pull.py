@@ -135,10 +135,10 @@ html_content = f"""
 """
 
 # Save the HTML content to a file
-with open("opportunity_details.html", "w") as file:
+html_file = "opportunity_details.html"
+with open(html_file, "w") as file:
     file.write(html_content)
 
 print("HTML content has been written to opportunity_details.html")
 
-# Automatically open the HTML file in a web browser
-webbrowser.open(f'file://{os.path.realpath(html_file)}')
+# Automatically open the HTML file in a web brow
