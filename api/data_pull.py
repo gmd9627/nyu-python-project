@@ -25,8 +25,8 @@ print(len(opportunities['opportunitiesData']))
 
 opportunities['opportunitiesData'][0]
 
-with open("my_dict.json", "w") as file:
-    json.dump(opportunities, file)
+with open("my_dict.json", "r") as file:
+    opps = json.load(file)
 
     # now, reference the file and pull some data from the first opportinity:
 
