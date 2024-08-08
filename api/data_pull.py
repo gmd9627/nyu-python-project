@@ -1,9 +1,10 @@
 naics_code_list = [541519, 334111, 513210, 541512, 423430]
 
 import os
-from dotenv import load_dotenv
-import requests
 import json
+import requests
+import webbrowser
+from dotenv import load_dotenv
 
 
 load_dotenv()
