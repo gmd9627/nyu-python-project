@@ -3,6 +3,7 @@ naics_code_list = [541519, 334111, 513210, 541512, 423430]
 # import secrets
 api_key = os.getenv("SAM_API_KEY", default="demo")
 
+import os
 import requests
 import json
 
