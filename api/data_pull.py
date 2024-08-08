@@ -1,11 +1,17 @@
 naics_code_list = [541519, 334111, 513210, 541512, 423430]
 
+import os
+from dotenv import load_dotenv
+import requests
+import json
+
+
+load_dotenv()
+
+
 # import secrets
 api_key = os.getenv("SAM_API_KEY", default="demo")
 
-import os
-import requests
-import json
 
 # max limit = 1000
 sam_url = f'https://api.sam.gov/prod/opportunities/v2/search?limit=1000&api_key={api_key}&postedFrom=08/05/2024&postedTo=08/06/2024&ptype=a&ncode=541519'
