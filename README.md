@@ -29,5 +29,5 @@ pip install -r requirements.txt
 
 #Run the script:
 
-python -m api/data_pull.py
+python -m api.data_pull
 '''
