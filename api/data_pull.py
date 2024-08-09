@@ -65,10 +65,6 @@ set_aside = opps['opportunitiesData'][0]['typeOfSetAside']
 amount = opps['opportunitiesData'][0]['award']['amount']
 contact_info = opps['opportunitiesData'][0]['pointOfContact'][0]
 
-
-# Replace 'opportunityLink' with the correct key if the link is directly available
-link = opps['opportunitiesData'][0].get('opportunityLink', f"https://example.com/opportunity/{opps['opportunitiesData'][0]['id']}")
-
 print('Title: ' + title)
 print('Posted on: ' + posted_date)
 print('Type: ' + type_of_opportunity)
@@ -82,7 +78,6 @@ contact_email = contact_info['email']
 print(contact_name)
 print(contact_phone)
 print(contact_email)
-print(link)
 
 # Generate the HTML content
 html_content = f"""
@@ -126,9 +121,7 @@ html_content = f"""
         <h2>Title: {title}</h2>
         <p><strong>Posted on:</strong> {posted_date}</p>
         <p><strong>Type:</strong> {type_of_opportunity}</p>
-        <p><strong>Set Aside:</strong> {set_aside}</p>
         <p><strong>Amount:</strong> ${amount}</p>
-        <p><strong>Opportunity Link:</strong> <a href="{link}" target="_blank">View Opportunity</a></p>
         <div class="contact-info">
             <h3>Contact Information</h3>
             <p><strong>Name:</strong> {contact_name}</p>
